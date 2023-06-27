@@ -3,7 +3,7 @@
 set -o errexit
 
 #poetry install
-pip install -r requeriments.tx
+pip install -r requirements.tx
 
 
 python manage.py collectstatic --no-input
