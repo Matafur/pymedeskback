@@ -34,3 +34,9 @@ class cliente(models.Model):
     emailCliente = models.EmailField(max_length=100)
     direccionCliente = models.CharField(max_length=100)
     ciudadCliente = models.CharField(max_length=100)
+
+class usuarios(models.Model):
+    id = models.AutoField(primary_key=True, editable=False)
+    nombreUsuario = models.CharField(max_length=100)
+    emailUsuario = models.EmailField(max_length=100)
+    emailPassword = models.CharField(max_length=100)
